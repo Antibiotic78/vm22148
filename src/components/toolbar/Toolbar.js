@@ -19,7 +19,8 @@ export class Toolbar extends ExcelStateComponent {
         textAlign: 'left',
         fontWeight: 'normal',
         fontDecoration: 'none',
-        fontStyle: 'normal'
+        fontStyle: 'normal',
+        textDecorationLine: 'none'
       }
       this.initState(initialState)
     }

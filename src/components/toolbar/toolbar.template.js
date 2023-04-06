@@ -40,6 +40,11 @@ export function createToolbar(state) {
             icon: 'format_underline',
             active: state['textDecoration'] === 'underline',
             value: {textDecoration: state['textDecoration'] === 'underline' ? 'none' : 'underline'}
+        },
+        {
+            icon: 'strikethrough_s',
+            active: state['textDecorationLine'] === 'line-through',
+            value: {textDecorationLine: state['textDecorationLine'] === 'line-through' ? 'none' : 'line-through'}
         }
     ]
     return buttons.map(toButton).join('')
